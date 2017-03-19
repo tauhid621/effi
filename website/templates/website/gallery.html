@@ -1,0 +1,307 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>   	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+
+    <link rel="stylesheet" href="{% static 'website/css/gallery/fontstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/gallery/tether.min.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/gallery/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/gallery/style.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/gallery/animate.min.css' %}">
+    	<link rel="stylesheet" href="{% static 'website/css/gallery/theme-style.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/gallery/material.css' %}">
+     <link rel="stylesheet" href="{% static 'website/css/gallery/mbr-additional.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/gallery/mob-style.css' %}">
+
+
+
+
+
+
+
+
+	
+	 <link rel="stylesheet" type="text/css" href="{% static 'website/css/gallery-style.css' %}">
+  <script>
+   $(document).ready(function(){
+   
+   $('.parallax').parallax();
+
+	$(document).on('scroll', function (e) {
+	
+	if($(document).scrollTop()>800)
+    {$('.navbar').css('opacity', 1);
+	$('.navbar').css('background-color', '#ee7230');
+	}
+	else
+	{$('.navbar').css('opacity', 0.5);
+	$('.navbar').css('background-color', '#000000');
+	}
+	});
+	
+	
+  });
+  
+  
+  </script>
+    <script>
+        $(document).ready(function () {
+           $("#logo").hover(function () {
+               if($(document).scrollTop()>800){
+            $(this).attr('src',"{% static 'website/img/logo.png' %}");}
+           },function () {
+            $(this).attr('src',"{% static 'website/img/logo2.png' %}");
+               });
+        });
+
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="{% url 'website:main' %}"><img id="logo" src="{% static 'website/img/logo2.png' %}"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>      
+        <div class="collapse navbar-collapse" id="Nav">
+            <ul class="nav navbar-nav navbar-right text-center">
+               <li><a class="list" href="{% url 'website:main' %}#about">ABOUT</a></li>
+				<li><a class="list" href="{% url 'website:team' %}">TEAM</a></li>
+                <li class="active"><a class="list" href="">GALLERY</a></li>
+                <li><a class="list" href="{% url 'website:sponsors' %}">SPONSORS</a></li>
+                <li><a class="list" href="{% url 'website:contact' %}">CONTACT</a></li>
+            </ul>
+        </div>
+            </div>
+        
+    </nav>
+	
+	
+	<div class="parallax-container">
+		<div class="parallax"><img src="{% static 'website/img/backimg.jpeg' %}"></div>
+	</div>
+	
+	
+	<div class="container-fluid text-center" id="header3-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 disp">
+                <h1>Here are some of our last years photos</h1>
+            </div>
+        </div>
+    </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel" id="gallery4-6" data-filter="true" style="padding-top: 0rem; padding-bottom: 0rem;">
+    <!-- Filter -->
+
+
+    <!-- Gallery -->
+    <div class="mbr-gallery-row">
+        <div class=" mbr-gallery-layout-default">
+            <div>
+                <div>
+                    <div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="0" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img1.jpeg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Responsive" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="1" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img2.jpeg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Creative" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="2" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img3_min.jpg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Animated" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="3" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img4_min.jpg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="4" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img5.jpg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Beautiful" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="5" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img6_min.jpg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Responsive" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="6" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img7_min.jpg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Animated" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="7" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img8_min.jpg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Awesome" data-video-url="false">
+                        <div href="#lb-gallery4-6" data-slide-to="8" data-toggle="modal">
+                            
+                            
+
+                            <img alt="" src="{% static 'website/img/gallery/img9_min.jpg' %}">
+                            
+                            <span class="icon-focus"></span>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery4-6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ol class="carousel-indicators">
+                        <li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="0"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="1"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="2"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="3"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="4"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="5"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="6"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="7"></li>
+						<li data-app-prevent-settings="" data-target="#lb-gallery4-6" data-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img1.jpeg' %}">
+                        </div><div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img2.jpeg' %}">
+                        </div><div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img3.jpeg' %}">
+                        </div><div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img4.jpg' %}">
+                        </div><div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img5.jpg' %}">
+                        </div><div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img6.jpg' %}">
+                        </div><div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img7.jpg' %}">
+                        </div><div class="carousel-item">
+                            <img alt="" src="{% static 'website/img/gallery/img8.jpg' %}">
+                        </div><div class="carousel-item active">
+                            <img alt="" src="{% static 'website/img/gallery/img9.jpg' %}">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" role="button" data-slide="prev" href="#lb-gallery4-6">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" role="button" data-slide="next" href="#lb-gallery4-6">
+                        <span class="icon-next" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                    <a class="close" href="#" role="button" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                        <span class="sr-only">Close</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <script src="{% static 'website/javascript/gallery/jquery.min.js' %}"></script>
+  
+  <script src="{% static 'website/javascript/gallery/bootstrap.min.js' %}"></script>
+
+
+ 
+  
+  <script src="{% static 'website/javascript/gallery/masonry.pkgd.min.js' %}"></script>
+  <script src="{% static 'website/javascript/gallery/bootstrap-carousel-swipe.js' %}"></script>
+  <script src="{% static 'website/javascript/gallery/theme-script.js' %}"></script>
+  <script src="{% static 'website/javascript/gallery/mobirise-script.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+  
+ 
+  
+</body>
+</html>
